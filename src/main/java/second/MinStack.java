@@ -22,7 +22,7 @@ public class MinStack {
     }
 
     public int pop(){
-        int data=stack.isEmpty()?null:stack.pop();
+        int data=stack.isEmpty()? Integer.MIN_VALUE :stack.pop();
         minStack.pop();
         return data;
     }
